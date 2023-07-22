@@ -1,0 +1,34 @@
+.bear {
+  .bear-swiper {
+    height: 160px;
+  }
+  .bear-app {
+    // height: calc(100vh - 210px);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    .app-item {
+      width: 85px;
+      height: 85px;
+      background: #ccc;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+      margin-right: 40px;
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+      .item-icon {
+        flex-shrink: 0;
+        width: 60px;
+        height: 60px;
+        background: #1b6bfe;
+      }
+      .item-text {
+        font-size: 14px;
+      }
+    }
+  }
+}

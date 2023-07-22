@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "sleepy-bear",
+  "appid": "testAppId",
+  "setting": {
+    "es6": false,
+    "minified": false
+  }
+}
