@@ -1,6 +1,6 @@
 import { View, Text, Image } from "@tarojs/components";
 import { useLoad } from "@tarojs/taro";
-import { Button, Swiper } from "@nutui/nutui-react-taro";
+import { Swiper } from "@nutui/nutui-react-taro";
 import "./index.less";
 import img1 from "../../assets/images/1.jpg";
 import img2 from "../../assets/images/2.jpg";
@@ -45,8 +45,6 @@ export default function Index() {
           <View className="item-icon"></View>
           <View className="item-text">xxx</View>
         </View>
-        <Button openType="share">分享给好友</Button>
-        <Button openType="openSetting">打开授权设置页</Button>
       </View>
     </View>
   );

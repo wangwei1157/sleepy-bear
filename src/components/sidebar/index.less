@@ -1,0 +1,19 @@
+.sidebar {
+  height: 100vh;
+  overflow-y: auto;
+  background-color: #ccc;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  .menu-item {
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+  }
+  .menu-item.select {
+    background-color: #fff;
+  }
+}
