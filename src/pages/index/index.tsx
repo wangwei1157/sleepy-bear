@@ -1,5 +1,5 @@
 import { View, Text, Image } from "@tarojs/components";
-import { useLoad } from "@tarojs/taro";
+import Taro, { useLoad } from "@tarojs/taro";
 import { Swiper } from "@nutui/nutui-react-taro";
 import "./index.less";
 import img1 from "../../assets/images/1.jpg";
@@ -10,7 +10,9 @@ export default function Index() {
   useLoad(() => {
     console.log("Page loaded.");
   });
-
+  const goDish = () => {
+    Taro.navigateTo({ url: "/pages/dish/index" });
+  };
   return (
     <View className="bear">
       <Swiper className="bear-swiper" autoPlay>
@@ -25,7 +27,11 @@ export default function Index() {
         </Swiper.Item>
       </Swiper>
       <View className="bear-app">
-        <View className="app-item">
+        <View className="app-item" onClick={goDish.bind(this)}>
+          <View className="item-icon dish"></View>
+          <View className="item-text">菜单</View>
+        </View>
+        {/* <View className="app-item">
           <View className="item-icon"></View>
           <View className="item-text">xxx</View>
         </View>
@@ -40,11 +46,7 @@ export default function Index() {
         <View className="app-item">
           <View className="item-icon"></View>
           <View className="item-text">xxx</View>
-        </View>
-        <View className="app-item">
-          <View className="item-icon"></View>
-          <View className="item-text">xxx</View>
-        </View>
+        </View> */}
       </View>
     </View>
   );

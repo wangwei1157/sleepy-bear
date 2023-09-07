@@ -1,17 +1,33 @@
 .bear {
+  height: calc(100vh - 50px);
+  overflow: hidden;
+  background: #f7f8fa;
   .bear-swiper {
-    height: 160px;
+    height: 160px !important;
+    .nut-swiper__inner,
+    [class^="taro-swiper-"] {
+      height: 160px !important;
+    }
+    .taro-image-core,
+    img {
+      width: 375px;
+      height: 160px;
+    }
   }
   .bear-app {
     // height: calc(100vh - 210px);
-    padding: 20px;
     display: flex;
+    flex-direction: row;
+    background: #fff;
     flex-wrap: wrap;
+    border-radius: 10px;
+    margin: 20px;
     // justify-content: space-between;
     .app-item {
       width: 85px;
       height: 85px;
-      background: #ccc;
+      background: #fff;
+      border-radius: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -25,6 +41,10 @@
         width: 60px;
         height: 60px;
         background: #1b6bfe;
+      }
+      .dish {
+        background: url("../../assets/images/bar/dish.png");
+        background-size: 60px;
       }
       .item-text {
         font-size: 14px;

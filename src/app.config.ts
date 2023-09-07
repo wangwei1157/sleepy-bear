@@ -2,39 +2,27 @@ export default defineAppConfig({
   pages: [
     'pages/index/index',
     'pages/personal/index',
-    'pages/menu/index',
+    'pages/dish/index',
   ],
   tabBar: {
+    color: '#000',
+    selectedColor: '#1296db',
+    backgroundColor: '#fff',
+    // borderStyle: 'black',
     list: [
       {
-        // iconPath: 'resource/latest.png',
-        // selectedIconPath: 'resource/lastest_on.png',
+        iconPath: 'assets/images/bar/home.png',
+        selectedIconPath: 'assets/images/bar/home-s.png',
         pagePath: 'pages/index/index',
         text: '首页',
       },
       {
-        // iconPath: 'resource/latest.png',
-        // selectedIconPath: 'resource/lastest_on.png',
+        iconPath: 'assets/images/bar/my.png',
+        selectedIconPath: 'assets/images/bar/my-s.png',
         pagePath: 'pages/personal/index',
         text: '我的',
       },
-      // {
-      //   iconPath: 'resource/hotest.png',
-      //   selectedIconPath: 'resource/hotest_on.png',
-      //   pagePath: 'pages/hot/hot',
-      //   text: '热门',
-      // },
-      // {
-      //   iconPath: 'resource/node.png',
-      //   selectedIconPath: 'resource/node_on.png',
-      //   pagePath: 'pages/nodes/nodes',
-      //   text: '节点',
-      // },
     ],
-    color: '#000',
-    selectedColor: '#56abe4',
-    backgroundColor: '#fff',
-    borderStyle: 'black',
   },
   window: {
     backgroundTextStyle: 'light',
